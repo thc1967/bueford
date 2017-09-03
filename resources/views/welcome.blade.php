@@ -22,16 +22,20 @@
 
             <b-tabs>
 
+                <b-tab-item label="Checkable Table">
+                    @include('checkabletable')
+                </b-tab-item>
+
                 <b-tab-item label="Table">
                     @include('table')
                 </b-tab-item>
 
-                <b-tab-item label="Basic Form">
+                <b-tab-item label="Basic Form" style="height: 1200px">
                     @include('basicform')
                 </b-tab-item>
 
-                <b-tab-item label="Buttons">
-                    @include('buttons')
+                <b-tab-item label="General">
+                    @include('general')
                 </b-tab-item>
                 
             </b-tabs>
@@ -39,40 +43,8 @@
         </section>
         
         <script src="{{ mix('/js/app.js') }}"></script>
-        <script>
-        var v = new Vue({
-            el: '#app',
-
-            props: {
-                @stack('vue.props')
-            },
-
-            data: function () {
-                return {
-                    @stack('vue.data')
-                }
-            },
-
-            computed: {
-                @stack('vue.computed')
-            },
-
-            methods: {
-                @stack('vue.methods')
-            },
-
-            created: function () {
-                console.log('vue created');
-                @stack('vue.created')
-            },
-
-            mounted: function () {
-                console.log('vue mounted');
-                @stack('vue.mounted')
-            }
-        });
-        </script>
         @stack('scripts')
+        @include('vue')
 
     </body>
 </html>

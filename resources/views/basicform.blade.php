@@ -21,7 +21,10 @@
     <b-field label="Select a date">
         <b-datepicker name="a_date"
             class="column is-4"
-            ></b-datepicker>
+            focused-date="9/1/2017"
+            icon="today">
+
+        </b-datepicker>
     </b-field>
 
     <hr />
@@ -36,5 +39,6 @@
 </form>
 
 @push('vue.data')
-'checkbox_vue': 1
+'checkbox_vue': 1,
+'date_vue': '9/1/2017',
 @endpush
