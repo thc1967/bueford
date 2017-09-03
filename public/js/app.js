@@ -792,7 +792,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 __webpack_require__(10);
 
-window.vue = __webpack_require__(33);
+window.Vue = __webpack_require__(33);
 
 
 Vue.use(__WEBPACK_IMPORTED_MODULE_0_buefy___default.a);
