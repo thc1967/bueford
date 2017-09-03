@@ -13,6 +13,8 @@
         <!-- Styles -->
         <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+
+        @stack('scripts.header')
     </head>
     <body>
         
@@ -21,6 +23,14 @@
             <h1 class="title">Buefy Test</h1>
 
             <b-tabs>
+
+                <b-tab-item label="Notifications">
+                    @include('notification')
+                </b-tab-item>
+
+                <b-tab-item label="Panels">
+                    @include('panel')
+                </b-tab-item>
 
                 <b-tab-item label="Checkable Table">
                     @include('checkabletable')
@@ -40,11 +50,14 @@
                 
             </b-tabs>
 
+            @stack('modals')
+
         </section>
         
         <script src="{{ mix('/js/app.js') }}"></script>
-        @stack('scripts')
+        @stack('scripts.before.vue')
         @include('vue')
+        @stack('scripts.after.vue')
 
     </body>
 </html>

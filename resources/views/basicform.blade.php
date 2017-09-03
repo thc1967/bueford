@@ -54,5 +54,5 @@
 todayClick: function () {
     console.log('todayClick()');
     this.date_vue = new Date();
-}
+},
 @endpush
