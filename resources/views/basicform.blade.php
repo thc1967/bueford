@@ -18,9 +18,22 @@
             native-value="1">Checkbox as Switch</b-switch>
     </div>
 
-    <b-field label="Select a date">
+    <b-field label="E-Mail Address">
+        <b-input type="email" value="" name="email" icon="email"></b-input>
+    </b-field>
+
+    <b-field label="Search">
+        <b-input type="search" icon="search" name="search"></b-input>
+    </b-field>
+
+    <b-field grouped>
+        <b-field label="name">
+            <b-input type="text" icon="user" name="name"></b-input>
+        </b-field>
+    </b-field>
+
+    <b-field label="Select a date" type="column is-one-quarter">
         <b-datepicker name="a_date"
-            class="column is-4"
             v-model="date_vue"
             :focused-date="default_date"
             icon="today">
