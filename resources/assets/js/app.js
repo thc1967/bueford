@@ -1,4 +1,3 @@
-
 /**
  * First, we will load all of this project's Javascript utilities and other
  * dependencies. Then, we will be ready to develop a robust and powerful
@@ -6,3 +5,8 @@
  */
 
 require('./bootstrap');
+
+window.vue = require('vue');
+
+import Buefy from 'buefy';
+Vue.use(Buefy);
