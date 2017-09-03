@@ -11,6 +11,7 @@
         <title>Buefy Test</title>
 
         <!-- Styles -->
+        <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     </head>
     <body>
@@ -20,6 +21,10 @@
             <h1 class="title">Buefy Test</h1>
 
             <b-tabs>
+
+                <b-tab-item label="Table">
+                    @include('table')
+                </b-tab-item>
 
                 <b-tab-item label="Basic Form">
                     @include('basicform')

@@ -11,10 +11,18 @@
     </div>
 
     <div class="field">
-        <b-switch name="checkbox_switch">
-            Checkbox as Switch
-        </b-switch>
+        <b-switch name="checkbox_switch"
+            value="1"
+            true-value="1"
+            false-value="0"
+            native-value="1">Checkbox as Switch</b-switch>
     </div>
+
+    <b-field label="Select a date">
+        <b-datepicker name="a_date"
+            class="column is-4"
+            ></b-datepicker>
+    </b-field>
 
     <hr />
 
