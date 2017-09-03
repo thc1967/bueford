@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('/formdump', function () {
+    dd(request()->all());
+});

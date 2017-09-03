@@ -21,12 +21,12 @@
 
             <b-tabs>
 
-                <b-tab-item label="Buttons">
-                    @include('buttons')
+                <b-tab-item label="Basic Form">
+                    @include('basicform')
                 </b-tab-item>
 
-                <b-tab-item label="Basic Form">
-                    Basic Form
+                <b-tab-item label="Buttons">
+                    @include('buttons')
                 </b-tab-item>
                 
             </b-tabs>
