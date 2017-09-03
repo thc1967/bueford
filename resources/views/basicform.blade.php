@@ -21,9 +21,16 @@
     <b-field label="Select a date">
         <b-datepicker name="a_date"
             class="column is-4"
-            focused-date="9/1/2017"
+            v-model="date_vue"
+            :focused-date="default_date"
             icon="today">
 
+            <button class="button is-primary"
+                type="button"
+                @click="todayClick">
+                <b-icon icon="today"></b-icon>
+                <span>Today</span>
+            </button>
         </b-datepicker>
     </b-field>
 
@@ -41,4 +48,11 @@
 @push('vue.data')
 'checkbox_vue': 1,
 'date_vue': '9/1/2017',
+'default_date': new Date(),
+@endpush
+@push('vue.methods')
+todayClick: function () {
+    console.log('todayClick()');
+    this.date_vue = new Date();
+}
 @endpush

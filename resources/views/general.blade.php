@@ -10,3 +10,12 @@
     <a class="button is-black">Black</a>
     <a class="button is-link">Link</a>
 </div>
+
+<div class="section">
+    <b-icon icon="person" type="is-primary"></b-icon>
+    <b-icon icon="home" type="is-info"></b-icon>
+    <b-icon icon="dashboard" type="is-success"></b-icon>
+    <b-icon pack="fa" icon="user" type="is-warning"></b-icon>
+    <b-icon pack="fa" icon="home" type="is-danger"></b-icon>
+    <b-icon pack="fa" icon="dashboard" type="is-dark"></b-icon>
+</div>

@@ -1,10 +1,5 @@
 <b-table class="section"
-    :data="tableDataSimple"
-    bordered="true"
-    striped="true"
-    narrowed="true"
-    {{--  loading="false"  --}}
-    mobile-cards="true">
+    :data="tableDataSimple">
 
     <template scope="props">
         <b-table-column label="ID" width="40" numeric>
