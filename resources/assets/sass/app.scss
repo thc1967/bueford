@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono');
 
  // Variables
- //@import "variables";
+ @import "node_modules/bulmaswatch/spacelab/variables";
  
  // Bulma
  @import "node_modules/bulma/bulma";
@@ -12,3 +12,6 @@
 
 // Buefy
 @import "node_modules/buefy/src/scss/buefy";
+
+// Bulmaswatch - better colors
+@import "node_modules/bulmaswatch/spacelab/overrides";

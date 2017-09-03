@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "buefy": "^0.5.1",
+    "bulmaswatch": "^0.5.0",
     "font-awesome": "^4.7.0"
   }
 }
